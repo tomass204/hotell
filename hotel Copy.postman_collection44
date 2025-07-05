@@ -1,0 +1,1105 @@
+{
+	"info": {
+		"_postman_id": "c7f57493-2811-4fd8-acb9-85ad534d48f4",
+		"name": "hotel Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44582303",
+		"_collection_link": "https://tomas-7009900.postman.co/workspace/Tomas's-Workspace~656c1a25-86fd-4dde-831c-a7ddc9796e72/collection/44582303-c7f57493-2811-4fd8-acb9-85ad534d48f4?action=share&source=collection_link&creator=44582303"
+	},
+	"item": [
+		{
+			"name": "autos",
+			"item": [
+				{
+					"name": "ver",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/hotel/v1/autos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"autos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/hotel/v1/autos/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"autos",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar activos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/hotel/v1/autos/listar-activos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"autos",
+								"listar-activos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"tipo\" : \"auto\",\r\n   \"marca\" : \"hyundai\",\r\n   \"modelo\" : \"accent\",\r\n   \"descripcion\" : \"hyundai accent de 4 puertas\",\r\n   \"valor\" : 30000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/hotel/v1/autos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"autos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipo\": \"auto\",\r\n    \"marca\": \"hyundai\",\r\n    \"modelo\": \"accent 2024\",\r\n    \"descripcion\": \"hyundai accent de 4 puertas\",\r\n    \"valor\": 30000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/hotel/v1/autos/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"autos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "activar",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/hotel/v1/autos/activar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"autos",
+								"activar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "desactivar",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/hotel/v1/autos/desactivar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"autos",
+								"desactivar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "habitaciones",
+			"item": [
+				{
+					"name": "ver",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/hotel/v1/habitaciones/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"habitaciones",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/hotel/v1/habitaciones/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"habitaciones",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar activos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/hotel/v1/habitaciones/listar-activos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"habitaciones",
+								"listar-activos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"descripcion\" : \"habitación 4 personas\",\r\n   \"valorPorDia\" : 60000,\r\n   \"numero\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/hotel/v1/habitaciones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"habitaciones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descripcion\": \"habitación 4 personas\",\r\n    \"valorPorDia\": 40000,\r\n    \"numero\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/hotel/v1/habitaciones/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"habitaciones",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "activar",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/hotel/v1/habitaciones/activar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"habitaciones",
+								"activar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "desactivar",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/hotel/v1/habitaciones/desactivar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"habitaciones",
+								"desactivar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "menu",
+			"item": [
+				{
+					"name": "ver",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/hotel/v1/menus/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"menus",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/hotel/v1/menus/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"menus",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar activos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/hotel/v1/menus/listar-activos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"menus",
+								"listar-activos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"nombre\" : \"Parrillada\",\r\n   \"descripcion\" : \"Parrillada para 4 personas\",\r\n   \"valor\" : 20000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/hotel/v1/menus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"menus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Parrillada\",\r\n    \"descripcion\": \"Parrillada para 4 personas\",\r\n    \"valor\": 30000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/hotel/v1/menus/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"menus",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "activar",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/hotel/v1/menus/activar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"menus",
+								"activar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "desactivar",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/hotel/v1/menus/desactivar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"menus",
+								"desactivar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "menu detalles",
+			"item": [
+				{
+					"name": "ver",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8087/api/hotel/v1/menu-detalles/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"menu-detalles",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar por reserva",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8087/api/hotel/v1/menu-detalles/reserva/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"menu-detalles",
+								"reserva",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8087/api/hotel/v1/menu-detalles/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"menu-detalles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"menuID\": 1,\r\n    \"reservaID\": 2,\r\n    \"fecha\": \"2025-06-02\",\r\n    \"cantidad\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/api/hotel/v1/menu-detalles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"menu-detalles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear menu de reserva",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"menuID\": 1,\r\n        \"fecha\": \"2025-06-09\",\r\n        \"cantidad\": 3\r\n    },\r\n    {\r\n        \"menuID\": 1,\r\n        \"fecha\": \"2025-06-10\",\r\n        \"cantidad\": 3\r\n    },\r\n    {\r\n        \"menuID\": 1,\r\n        \"fecha\": \"2025-06-11\",\r\n        \"cantidad\": 3\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/api/hotel/v1/menu-detalles/reserva/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"menu-detalles",
+								"reserva",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"menuID\": 1,\r\n    \"reservaID\": 2,\r\n    \"fecha\": \"2025-06-02\",\r\n    \"cantidad\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/api/hotel/v1/menu-detalles/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"menu-detalles",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "clientes",
+			"item": [
+				{
+					"name": "ver",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/hotel/v1/clientes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "iniciar session",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/hotel/v1/clientes/iniciar-session?run=1111111-1&contrasena=1234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"clientes",
+								"iniciar-session"
+							],
+							"query": [
+								{
+									"key": "run",
+									"value": "1111111-1"
+								},
+								{
+									"key": "contrasena",
+									"value": "1234"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ver por run",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/hotel/v1/clientes/run/1111111-1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"clientes",
+								"run",
+								"1111111-1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"run\" : \"1111111-1\",\r\n   \"nombres\" : \"prueba nombres\",\r\n   \"apellidos\" : \"prueba apellidos\",\r\n   \"telefono\" : \"9999999\",\r\n   \"email\" : \"prueba@gmail.com\",\r\n   \"contrasena\" : \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/hotel/v1/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"run\": \"1111111-1\",\r\n    \"nombres\": \"prueba nombres\",\r\n    \"apellidos\": \"prueba apellidos\",\r\n    \"telefono\": \"9999999\",\r\n    \"email\": \"prueba@gmail.com\",\r\n    \"contrasena\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/hotel/v1/clientes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "activar",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/hotel/v1/clientes/activar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"clientes",
+								"activar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "desactivar",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/hotel/v1/clientes/desactivar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"clientes",
+								"desactivar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pagos",
+			"item": [
+				{
+					"name": "ver",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8086/api/hotel/v1/pagos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"pagos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"medioPago\" : \"tarjeta\",\r\n   \"totalPago\" : 40000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8086/api/hotel/v1/pagos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"pagos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"medioPago\" : \"tarjeta\",\r\n   \"totalPago\" : 45000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8086/api/hotel/v1/pagos/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"pagos",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pagar",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8086/api/hotel/v1/pagos/pagar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"pagos",
+								"pagar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reserva",
+			"item": [
+				{
+					"name": "crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fechaInicio\": \"2025-06-01\",\r\n    \"fechaFin\": \"2025-06-25\",\r\n    \"clienteID\": 1,\r\n    \"habitacionID\": 1,\r\n    \"autoID\": 1,\r\n    \"menus\": [\r\n        {\r\n            \"menuID\": 1,\r\n            \"fecha\": \"2025-06-01\",\r\n            \"cantidad\": 3\r\n        },\r\n        {\r\n            \"menuID\": 1,\r\n            \"fecha\": \"2025-06-02\",\r\n            \"cantidad\": 3\r\n        },\r\n        {\r\n            \"menuID\": 1,\r\n            \"fecha\": \"2025-06-03\",\r\n            \"cantidad\": 3\r\n        },\r\n        {\r\n            \"menuID\": 1,\r\n            \"fecha\": \"2025-06-04\",\r\n            \"cantidad\": 3\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/api/hotel/v1/reservas",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"reservas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "anular",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/api/hotel/v1/reservas/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"hotel",
+								"v1",
+								"reservas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
